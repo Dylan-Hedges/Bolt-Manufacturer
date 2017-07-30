@@ -6,4 +6,21 @@ $(document).ready(function() {
             offset: '90%'
         });
 
+        //Google maps starting position
+    var map = new GMaps({
+        div: '.map',
+        lat: 54.7388,
+        lng: 55.9721,
+        zoom: 12
+    });
+
+    map.addMarker({
+        lat: 54.7388,
+        lng: 55.9721,
+        title: 'UFA',
+        infoWindow: {
+            content: '<p> You can find us at this location</p>'
+        }
+    });
+
 });
