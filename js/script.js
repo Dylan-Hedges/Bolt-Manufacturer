@@ -19,7 +19,7 @@ $(document).ready(function() {
         lng: 55.9721,
         title: 'UFA',
         infoWindow: {
-            content: '<p> You can find us at this location</p>'
+            content: '<p> You can find us at: <br> x number <br> x street <br> UFA </p>'
         }
     });
 
