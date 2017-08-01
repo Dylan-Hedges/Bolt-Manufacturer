@@ -153,14 +153,18 @@
                         </div>
                     <div class="row">
                     <?php
-                        <div class="form-messages success">
+                        if($_GET['success'] == 1){
+                            echo "<div class=\"form-messages success\">
                             Thank you. Your message has been sent.
-                        </div>
-                        <div class="form-messages error">
+                            </div>";
+                        }
+                       if($_GET['success'] == -1){
+                        echo <div class=\"form-messages error\">
                             Oops! something went wrong. Please try again!
-                        </div>
-                    </div>
+                        </div>";
+                        }
                     ?>
+                    </div>
                     <!-- php/mailer.php ????-->
                     <form method="post" action="mailer.php" class="contact-form">
                         <div class="row">

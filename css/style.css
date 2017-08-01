@@ -252,7 +252,22 @@ textarea {
     height: 200px;
 }
 
+.form-messages {
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    color: #333;
+}
 
+.success{
+    background-color: rgba(38, 191, 68, 0.8);
+}
+
+.error{
+    background-color: rgba(209, 46, 46, 0.8);
+}
 
 /*----------------------------------FOOTER------------------------------------*/
 .footer{
