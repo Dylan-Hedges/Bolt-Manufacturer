@@ -15,11 +15,11 @@ $(document).ready(function() {
     });
 
     map.addMarker({
-        lat: 54.7388,
-        lng: 55.9721,
+        lat: 54.746167,
+        lng: 55.976194,
         title: 'UFA',
         infoWindow: {
-            content: '<p> You can find us at: <br> x number <br> x street <br> UFA </p>'
+            content: '<p> г.Уфа <br> ул.Кировоградская <br> 36 <br> 450001 </p>'
         }
     });
 

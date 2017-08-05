@@ -4,7 +4,7 @@ body {
 /*    background-color: rgb(121, 121, 121);*/
     background-color: #9b9b9b;
 /*    color: rgb(239, 239, 239);*/
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     font-family: 'Lato', 'Arial', sans-serif;
     font-weight: 300;
     font-size: 20px;
@@ -87,16 +87,16 @@ h1 {
 .splash-page {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bolt4.jpg);
     background-size: cover;
-    height: 100vh;
+    height: 100%;
     background-attachment: fixed;
-    padding: 0 5% 0 0;
+    padding: 0 4% 30% 0;
 }
 
 .splash-page h1{
     text-align: right;
     font-size: 400%;
     font-weight: 400;
-    padding: 18% 8% 0 0;
+    padding: 17% 0 0 0;
 }
 
 
@@ -104,7 +104,7 @@ h1 {
 /*-------------------------------------ABOUT PAGE------------------------------------*/
 
 .about-page {
-    padding: 2% 0 2% 0;
+    padding: 2% 0 4% 0;
 }
 
 
@@ -113,13 +113,12 @@ h1 {
     height: auto;
     border-radius: 50%;
     padding-left: 10px;
-    margin-top:2%;
+    margin-top: 2%;
 
 
 }
 
 .about-page-content p {
-    font-size: 18px;
     text-align: center;
     margin: 3% 0 0 0;
 }
@@ -143,13 +142,29 @@ h1 {
 
 }
 
+
+.product-page p {
+    text-align: center;
+    padding-left: 2%;
+
+}
+
+.product-page ul {
+    padding-bottom: 2%;
+}
+
+ .product-page li {
+    text-align: center;
+    list-style-type: none;
+}
+
+
 .product-page img {
     width: 100%;
     margin: 0;
     padding: 0;
     opacity: 0.8;
     transition: transform 0.5s, opacity 0.5s;
-
 }
 
 
@@ -180,36 +195,33 @@ h1 {
 /*---------------------------------EQUIPMENT PAGE-----------------------------*/
 .equipment-page{
     padding: 2% 0 0 0;
+
 }
 
 .equipment-content {
-    padding: 3% 0 0 0;
+    padding: 2% 0 2% 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/machine.jpg);
     background-size: cover;
     background-position: left;
-    height: 70vh;
     background-attachment: fixed;
-    font-size: 120%;
 }
-
 
 .equipment-page img {
     width: 100%;
-/*    height: 100%;*/
     padding: 0;
     margin: 0;
-
 
 }
 
 .equipment-content li{
     text-align: center;
-    font-weight: 100;
     list-style-type: none;
 }
 
 .equipment-content p {
     text-align: center;
+    padding: 1% 25% 0 25%;
+
 }
 
 
@@ -243,7 +255,6 @@ footer {
     padding: 2% 0 1% 0;
     margin: 0;
     font-size: 80%;
-    color: #d0d0d0;
 }
 
 footer p {
@@ -255,7 +266,7 @@ footer p {
 
 .footer-nav-left li a {
     transition: color 0.2s;
-    color: #d0d0d0;
+    color: #ffffff;
 }
 
 
@@ -273,10 +284,11 @@ footer p {
 .footer-nav-left li, .footer-nav-right li {
     display: inline-block;
     margin-right: 20px;
-
 }
 
-
+.footer-nav-right li i {
+    font-size: 130%;
+}
 
 
 
