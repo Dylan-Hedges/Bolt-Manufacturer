@@ -1,8 +1,10 @@
 /*-------------------------------------BASIC SET UP------------------------------------*/
 html,
 body {
-    background-color: rgb(121, 121, 121);
-    color: rgb(239, 239, 239);
+/*    background-color: rgb(121, 121, 121);*/
+    background-color: #9b9b9b;
+/*    color: rgb(239, 239, 239);*/
+    color: rgb(255, 255, 255);
     font-family: 'Lato', 'Arial', sans-serif;
     font-weight: 300;
     font-size: 20px;
@@ -11,17 +13,29 @@ body {
 
 h1 {
     font-size: 200%;
-    color: #d9d2d2;
+    color: #ffffff;
     font-weight: 300;
     word-spacing: 4px;
     letter-spacing: 1px;
     text-transform: uppercase;
+    text-align: center;
+    padding: 0 0 3% 0;
 }
 
 .btn{
     font-family: 'Lato', 'Arial', sans-serif;
     border: 1px solid #838383;
     background-color:#c4c4c4;
+}
+
+/*---------------ANIMATIONS-----------------*/
+.js--wp-1 {
+    opacity: 0;
+    animation-duration: 2s;
+}
+
+.js--wp-1.animated {
+    opacity: 1;
 }
 
 /*-----------------------------NAVIGATION BAR------------------------------------*/
@@ -34,11 +48,12 @@ h1 {
 
 /*-----Nav Bar Logo----*/
 .navbar-header img {
-    width: 120px;
-    height: 130px;
-/*    border-radius: 50%;*/
+/*    width: 120px;*/
+/*    height: 130px;*/
+    height: 700%;
     padding: 0;
     margin: 0;
+    border-radius: 50%;
 }
 
 /*----Nav Bar Titles----*/
@@ -70,18 +85,18 @@ h1 {
 /*-------------------------------------SPLASH PAGE------------------------------------*/
 
 .splash-page {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/splash_background.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bolt4.jpg);
     background-size: cover;
-    background-position: left;
     height: 100vh;
     background-attachment: fixed;
+    padding: 0 5% 0 0;
 }
 
 .splash-page h1{
-    text-align: center;
+    text-align: right;
     font-size: 400%;
     font-weight: 400;
-    margin: 28% 0 0 0;
+    padding: 18% 8% 0 0;
 }
 
 
@@ -89,55 +104,28 @@ h1 {
 /*-------------------------------------ABOUT PAGE------------------------------------*/
 
 .about-page {
-    margin: 2% 0 0 0;
+    padding: 2% 0 2% 0;
 }
 
-.about-page-icons i{
-    padding:0;
-    font-size: 400%;
-    margin: 10% 0 0 50%;
-}
-
-
-/*---------------SOCAIL MEDIA ICONS ANIMATION-----------------*/
-.js--wp-1 {
-    opacity: 0;
-    animation-duration: 2s;
-}
-
-.js--wp-1.animated {
-    opacity: 1;
-}
-
-.about-page-content {
-    margin: 7% 0 0 0;
-}
 
 .about-page-content img {
-    width: 70%;
+    width: 80%;
     height: auto;
-/*    border-radius: 50%;*/
+    border-radius: 50%;
+    padding-left: 10px;
+    margin-top:2%;
+
 
 }
 
 .about-page-content p {
     font-size: 18px;
     text-align: center;
-    margin-bottom: 5%;
-}
-
-.about-page-flags {
-    padding: 0;
-    margin: 0;
-    margin: 2% 0 0 0;
-}
-
-.about-page-flags img {
-    width: 90%;
-    height: auto;
-    padding: 0;
     margin: 3% 0 0 0;
 }
+
+
+
 /* -- used to center image inside of col-lg-6 etc, already in bootstrap copied as an FYI---
 .center-block {
     display: block;
@@ -146,35 +134,31 @@ h1 {
  }
 */
 
-/*-------------------------------------GALLERY PAGE------------------------------------*/
+/*----------------------------------PRODUCT PAGE------------------------------------*/
 
 
-.gallery-page {
-    margin: 5% 0 0 0;
-}
-
-.gallery-page h1{
-    text-align: center;
-    padding: 0 0 1% 0;
+.product-page {
+    padding: 2% 0 0 0;
+    background-color: #acacac;
 
 }
 
-.gallery-page img {
+.product-page img {
     width: 100%;
-    height: 300px;
     margin: 0;
     padding: 0;
     opacity: 0.8;
     transition: transform 0.5s, opacity 0.5s;
+
 }
 
 
-.gallery-page a{
+.product-page a{
     padding: 0 !important;
 }
 
 
-.gallery-page img:hover {
+.product-page img:hover {
     opacity: 1;
     transform: scale(1.03);
     /*z-index: 1; position:relative; on zoom layers image on top of others*/
@@ -195,13 +179,19 @@ h1 {
 
 /*---------------------------------EQUIPMENT PAGE-----------------------------*/
 .equipment-page{
-    margin: 5% 0 0 0;
+    padding: 2% 0 0 0;
 }
 
-.equipment-page h1{
-    margin-bottom: 4%;
-    text-align: center;
+.equipment-content {
+    padding: 3% 0 0 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/machine.jpg);
+    background-size: cover;
+    background-position: left;
+    height: 70vh;
+    background-attachment: fixed;
+    font-size: 120%;
 }
+
 
 .equipment-page img {
     width: 100%;
@@ -228,14 +218,11 @@ h1 {
 /*------------------------------MAP PAGE----------------------------------*/
 
 
-.map-page{
-    margin: 2% 0 0 0;
+.findus-page{
+    padding: 2% 0 0 0;
+    background-color: #acacac;
 }
 
-.map-page h1{
-    text-align: center;
-    padding: 1% 0 1% 0;
-}
 
 /*.map {} styles the Google Map on our page*/
 .map {
