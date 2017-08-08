@@ -139,18 +139,21 @@ h1 {
 .product-page {
     padding: 2% 0 0 0;
     background-color: #acacac;
+    color: #000000;
 
 }
+
 
 
 .product-page p {
     text-align: center;
     padding-left: 2%;
-
+    color: #ffffff;
 }
 
 .product-page ul {
-    padding-bottom: 2%;
+    padding-bottom: 5%;
+    color: #ffffff;
 }
 
  .product-page li {
@@ -158,6 +161,10 @@ h1 {
     list-style-type: none;
 }
 
+.product-page a{
+    padding: 0 !important;
+        outline: none;
+}
 
 .product-page img {
     width: 100%;
@@ -167,12 +174,6 @@ h1 {
     transition: transform 0.5s, opacity 0.5s;
 }
 
-
-.product-page a{
-    padding: 0 !important;
-}
-
-
 .product-page img:hover {
     opacity: 1;
     transform: scale(1.03);
@@ -181,15 +182,6 @@ h1 {
 }
 
 
-/*---------------POP UP IMAGE GALLERY-----------------*/
-.ekko-lightbox-nav-overlay a{
-    font-size: 100px;
-
-}
-
-.modal-body {
-    padding: 0;
-}
 
 
 /*---------------------------------EQUIPMENT PAGE-----------------------------*/

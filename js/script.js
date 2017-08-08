@@ -23,4 +23,15 @@ $(document).ready(function() {
         }
     });
 
+    //Image popover text boxes
+    $('#PopoverImg1').popover();
+
+    $('#PopoverImg2').popover();
+
+    $('#PopoverImg3').popover();
+
+    $('#PopoverImg4').popover();
+
 });
+
+
