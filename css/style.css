@@ -111,15 +111,12 @@ h1 {
     background-color: #f4f4f4;
 }
 
-
 .about-page-content img {
     width: 80%;
     height: auto;
     border-radius: 50%;
     padding-left: 10px;
     margin-top: 2%;
-
-
 }
 
 .about-page-content p {
@@ -160,22 +157,20 @@ h1 {
     list-style-type: none;
 }
 
-.product-page a{
-    padding: 0 !important;
-    outline: none;
-}
+/*Products Page Images*/
 
+.product-page-images{
+    padding: 0 !important;
+}
 
 .container-image {
     position: relative;
     background-color: #000000;
-
 }
 
 .image {
     width: 100%;
     transition: transform 0.5s, opacity 0.5s;
-
 }
 
 .overlay {
@@ -187,10 +182,9 @@ h1 {
 
 .container-image:hover .overlay {
   opacity: 1;
-
 }
 
-.text {
+.image-text {
   color: #ffffff;
   position: absolute;
   left: 50%;
@@ -204,6 +198,11 @@ h1 {
     padding: 2% 0 0 0;
     background-color: #f4f4f4;
 }
+
+.equipment-page h1 {
+    background-color: #f4f4f4;
+}
+
 
 .equipment-content {
     padding: 2% 0 2% 0;
@@ -241,7 +240,6 @@ h1 {
 
 .findus-page{
     padding: 2% 0 0 0;
-
 }
 
 
@@ -265,8 +263,7 @@ footer {
     padding: 1% 0 1% 0;
     margin: 0;
     font-size: 80%;
-    color: #ffffff;
-
+    color: #e6e6e6;
 }
 
 footer p {
@@ -275,6 +272,16 @@ footer p {
     margin: 0;
 }
 
+footer ul {
+    padding: 0;
+    margin: 0;
+}
+
+
+.footer-nav-left li, .footer-nav-right li{
+    display: inline-block;
+    margin-right: 20px;
+}
 
 .footer-nav-left li a {
     transition: color 0.2s;
@@ -289,17 +296,10 @@ footer p {
 
 
 .footer-nav-right {
-    float: right;
+    float:right;
 }
 
-
-
-.footer-nav-left li, .footer-nav-right li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-.footer-nav-right li i {
+.footer-nav-right i {
     font-size: 130%;
 }
 
