@@ -1,308 +1,336 @@
 /*-------------------------------------BASIC SET UP------------------------------------*/
 html,
 body {
-/*    background-color: rgb(121, 121, 121);*/
-/*    background-color: #9b9b9b;*/
-/*    color: rgb(239, 239, 239);*/
-    background-color: #fff;
-    color: #5c5c5c;
-/*    color: #ffffff;*/
-    font-family: 'Open Sans', sans-serif;
+    color: #555;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 20px;
     overflow-x: hidden;
-    overflow-y: scroll !important;
 }
 
 h1 {
     font-size: 200%;
-    font-weight: 300;
+    color: #555;
+    font-weight: 400;
     word-spacing: 4px;
     letter-spacing: 1px;
     text-transform: uppercase;
     text-align: center;
-    padding: 0 0 3% 0;
 }
 
-.btn{
-    font-family: 'Lato', 'Arial', sans-serif;
-    border: 1px solid #838383;
-    background-color:#c4c4c4;
+h2 {
+    font-size: 200%;
+    color: #555;
+    font-weight: 300;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
+
+
 
 /*---------------ANIMATIONS-----------------*/
 .js--wp-1 {
     opacity: 0;
-    animation-duration: 2s;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
 }
 
 .js--wp-1.animated {
     opacity: 1;
 }
 
-/*-----------------------------NAVIGATION BAR------------------------------------*/
+.js--wp-2 {
+    opacity: 0;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+}
+
+.js--wp-2.animated {
+    opacity: 1;
+}
+
+.js--wp-3 {
+    opacity: 0;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+}
+
+.js--wp-3.animated {
+    opacity: 1;
+}
+
+.js--wp-4 {
+    opacity: 0;
+}
+
+.js--wp-4.animated {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    opacity: 1;
+}
+
+.js--wp-5 {
+    opacity: 0;
+}
+
+.js--wp-5.animated {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    opacity: 1;
+}
+
+/*-------------------------------------NAVIGATION BAR------------------------------------*/
 
 .navbar {
     background: transparent;
     border: none;
-    font-family: 'Lato';
+    margin-right: 2%;
 }
 
-/*-----Nav Bar Logo----*/
 .navbar-header img {
-/*    width: 120px;*/
-/*    height: 130px;*/
-    height: 700%;
-    padding: 0;
-    margin: 0;
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
 }
 
+
 /*----Nav Bar Titles----*/
+
 .navbar li a {
     text-transform: uppercase;
     text-align: right;
     color: #fff;
-    padding-top: 20px;
+    padding-top: 40px;
+    border-bottom: 2px solid transparent;
 }
 
-.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a:hover  {
+#navstyle {
     color: #fff;
+    font-size: 85%;
 }
+
 
 .navbar li a:hover, .navbar li a:active  {
-    border-bottom: 2px solid #d9d2d2;
-    border-bottom 0.2s;
+    border-color: #ffffff;
 }
 
 /*----Nav Bar Collapsed---*/
 .navbar-collapse{
     border: none;
+    -webkit-box-shadow: none;
     box-shadow: none;
-/*    float: left !important;*/
 }
-
-
 
 /*-------------------------------------SPLASH PAGE------------------------------------*/
 
+
+
 .splash-page {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bolt4.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../img/splash_background.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/splash_background.jpg);
     background-size: cover;
-    height: 100%;
     background-attachment: fixed;
-    padding: 0 4% 30% 0;
+    padding: 0 0 28% 0;
 }
+
 
 .splash-page h1{
     color: #ffffff;
-    text-align: right;
-    font-size: 400%;
-    font-weight: 400;
-    padding: 17% 0 0 0;
+    font-size: 300%;
+    float: right;
+    margin: 15% 9% 0 0;
 }
 
+/*-------------BUTTONS---------------*/
 
+.transparent-button, .transparent-button:link, .transparent-button:visited {
+    float: right;
+    margin: 3% 23% 0 0;
+    padding: 15px 40px;
+    font-size: 130% !important;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    color: #ffffff !important;
+    background-color: transparent!important;
+    -webkit-transition: background-color 0.3s, border 0.3s, color 0.3s;
+    transition: background-color 0.3s, border 0.3s, color 0.3s;
+}
+
+.transparent-button:hover, .transparent-button:active {
+    background-color: #fff !important;
+    border: 1px solid #fff;
+    color: #555 !important;
+
+}
 
 /*-------------------------------------ABOUT PAGE------------------------------------*/
 
 .about-page {
-    padding: 2% 0 4% 0;
-    background-color: #f4f4f4;
+    padding: 2% 0 0 0;
+    background:  #f4f4f4;
+}
+
+.about-page-content {
+    margin: 7% 0 0 0;
 }
 
 .about-page-content img {
-    width: 80%;
-    height: auto;
+    width: 70%;
+    height: 70%;
     border-radius: 50%;
-    padding-left: 10px;
-    margin-top: 2%;
+
 }
 
 .about-page-content p {
     text-align: center;
-    margin: 3% 0 0 0;
+    margin: 3% 0 5% 0;
+    font-weight: 400;
 }
 
 
-
-/* -- used to center image inside of col-lg-6 etc, already in bootstrap copied as an FYI---
-.center-block {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
- }
-*/
-
-/*----------------------------------PRODUCT PAGE------------------------------------*/
-
-
-.product-page {
-    padding: 2% 0 0 0;
-/*    background-color: #acacac;*/
-
+/*------------------------------LOCATIONS PAGE----------------------------------*/
+.products-page{
+    margin: 5% 0 0 0;
 }
 
-.product-page p {
-    text-align: center;
-    padding-left: 2%;
-}
-
-.product-page ul {
-    padding-bottom: 5%;
-}
-
- .product-page li {
-    text-align: center;
-    list-style-type: none;
-}
-
-/*Products Page Images*/
-
-.product-page-images{
+.removespaces {
     padding: 0 !important;
 }
 
-.container-image {
-    position: relative;
-    background-color: #000000;
+.products-page h1{
+    text-align: center;
+    margin-bottom: 4%;
 }
 
-.image {
+.products-page p{
+    text-align: center;
+    margin-top: 6%;
+    font-size: 120%;
+    font-weight: 400;
+}
+
+.products-page img {
     width: 100%;
-    transition: transform 0.5s, opacity 0.5s;
-}
-
-.overlay {
-  position: absolute;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-}
-
-.container-image:hover .overlay {
-  opacity: 1;
-}
-
-.image-text {
-  color: #ffffff;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -250%);
+    height: 100%;
 }
 
 
+/*------------------------------EQUIPMENT PAGE----------------------------------*/
 
-/*---------------------------------EQUIPMENT PAGE-----------------------------*/
-.equipment-page{
-    padding: 2% 0 0 0;
-    background-color: #f4f4f4;
-}
-
-.equipment-page h1 {
-    background-color: #f4f4f4;
-}
-
-
-.equipment-content {
-    padding: 2% 0 2% 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/machine.jpg);
+.equipment-page {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(../img/machine.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/machine.jpg);
     background-size: cover;
-    background-position: left;
     background-attachment: fixed;
-}
-
-.equipment-page img {
-    width: 100%;
-    padding: 0;
-    margin: 0;
+    color: #fff;
+    padding: 3% 0 5% 0;
+    margin: 3% 0 0 0;
+    text-align: center;
+    color: #ffffff;
 
 }
 
 .equipment-content li{
-    text-align: center;
     list-style-type: none;
-    color: #ffffff;
-
 }
 
 .equipment-content p {
-    text-align: center;
     padding: 1% 25% 0 25%;
-    color: #ffffff;
+    font-size: 110%;
 }
 
+.equipment-content h1 {
+    color: #ffffff;
+    padding-bottom: 2%;
 
-
-
+}
 /*------------------------------MAP PAGE----------------------------------*/
 
-
-.findus-page{
+.map-page {
+    background-color:  #f4f4f4;
     padding: 2% 0 0 0;
 }
 
-
+.map-page h1 {
+    margin: 0 0 2% 0;
+}
 /*.map {} styles the Google Map on our page*/
-.map {
-/*    width: 100%;*/
-    height: 650px;
+#map {
+    width: 100%;
+    height: 700px;
     padding: 20px 0 0 0;
+    color: #555;
 }
-
-/*Text colour inside of markers*/
-.map p{
-    color: #000000;
-}
-
 
 /*------------------------------FOOTER---------------------------------*/
 
 footer {
-    background-color: #5f5f5f;
-    padding: 1% 0 1% 0;
+    padding: 1% 0 0 0;
     margin: 0;
     font-size: 80%;
-    color: #e6e6e6;
+    background:  #f4f4f4;
+    font-weight: 400;
 }
 
 footer p {
     text-align: center;
     padding: 0;
     margin: 0;
+
 }
 
-footer ul {
-    padding: 0;
-    margin: 0;
+.footer-nav-left {
+    list-style: none;
+    float: left;
 }
 
+.contact-info {
+    list-style: none;
+    float: right;
+}
 
-.footer-nav-left li, .footer-nav-right li{
+.footer-nav, .contact-info{
+    margin-bottom: 0 !important;
+}
+
+.footer-nav li,
+.contact-info li {
     display: inline-block;
     margin-right: 20px;
 }
 
-.footer-nav-left li a {
-    transition: color 0.2s;
-    color: #e6e6e6;
+.footer-nav li:last-child,
+.contact-info li:last-child {
+    margin-right: 0;
 }
 
-
-.footer-nav-left li a:hover{
-    color: #ffffff;
+.footer-nav li a:link,
+.footer-nav li a:visited{
     text-decoration: none;
+    border: 0;
+    color: #555;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
 }
 
-
-.footer-nav-right {
-    float:right;
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #adadad;
 }
 
-.footer-nav-right i {
-    font-size: 130%;
+.contact-info li i{
+    font-size: 140%;
 }
 
+/*------------------------------iOS background image issue---------------------------------*/
 
+@media only screen and (max-width: 1023px) {
+    .splash-page {
+        background-attachment: scroll;
+    }
 
-
+    .equipment-page {
+        background-attachment: scroll;
+    }
+}
