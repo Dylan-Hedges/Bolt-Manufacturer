@@ -69,8 +69,8 @@ function initMap() {
     //Array of objects containing marker coordinates
     var markers = [
         {
-            coords:{lat: 54.746167, lng: 55.976194,},
-            content:'<p><b>UFA</b><p> г.Уфа <br> ул.Кировоградская <br> 36 <br> 450001 </p>'
+            coords:{lat: 54.713088, lng: 55.954149,},
+            content:'<p><b>г Уфа</b><p> ул. Салавата <br> 17 <br> 450057 </p>'
         }
         ];
 

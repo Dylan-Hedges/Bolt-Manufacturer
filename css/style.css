@@ -233,6 +233,7 @@ h2 {
 
 .equipment-content li{
     list-style-type: none;
+    padding-top: 1%;
 }
 
 .equipment-content p {
@@ -266,11 +267,11 @@ h2 {
 /*------------------------------FOOTER---------------------------------*/
 
 footer {
-    padding: 1% 0 0 0;
     margin: 0;
     font-size: 80%;
     background:  #f4f4f4;
     font-weight: 400;
+    padding: 1% 0 0 0;
 }
 
 footer p {
@@ -292,6 +293,7 @@ footer p {
 
 .footer-nav, .contact-info{
     margin-bottom: 0 !important;
+
 }
 
 .footer-nav li,
@@ -333,4 +335,15 @@ footer p {
     .equipment-page {
         background-attachment: scroll;
     }
+}
+
+/*------------------------------iOS background image issue---------------------------------*/
+
+@media only screen and (max-width: 360px) {
+
+
+    .contact-info {
+    padding: 20px !important;
+}
+
 }
