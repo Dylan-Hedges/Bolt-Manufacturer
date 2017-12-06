@@ -337,13 +337,3 @@ footer p {
     }
 }
 
-/*------------------------------iOS background image issue---------------------------------*/
-
-@media only screen and (max-width: 360px) {
-
-
-    .contact-info {
-    padding: 20px !important;
-}
-
-}
