@@ -1,12 +1,11 @@
 $(document).ready(function() {
 
 //---------------------ANIMATIONS---------------------
-
 //Fade in functionality - uses Animate.css
     $('.js--wp-1').waypoint(function(direction) {
         $('.js--wp-1').addClass('animated fadeInUp');
     }, {
-            offset: '90%'
+        offset: '90%'
     });
 
     $('.js--wp-2').waypoint(function(direction) {
@@ -20,11 +19,13 @@ $(document).ready(function() {
     }, {
         offset: '80%'
     });
+
     $('.js--wp-4').waypoint(function(direction) {
         $('.js--wp-4').addClass('animated bounceIn');
     }, {
         offset: '70%'
     });
+
     $('.js--wp-5').waypoint(function(direction) {
         $('.js--wp-5').addClass('animated bounceIn');
     }, {
@@ -40,6 +41,7 @@ $(document).ready(function() {
             scrollTop: $(this.hash).offset().top
         }, 1000 );
     });
+});
 
 //---------------------MAP---------------------
 
