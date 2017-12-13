@@ -1,36 +1,35 @@
 $(document).ready(function() {
 
-    //---------------------ANIMATIONS---------------------
+//---------------------ANIMATIONS---------------------
 
-    //Fade in functionality - uses Animate.css
-        $('.js--wp-1').waypoint(function(direction) {
-            $('.js--wp-1').addClass('animated fadeInUp');
-        }, {
+//Fade in functionality - uses Animate.css
+    $('.js--wp-1').waypoint(function(direction) {
+        $('.js--wp-1').addClass('animated fadeInUp');
+    }, {
             offset: '90%'
-        });
+    });
 
-        $('.js--wp-2').waypoint(function(direction) {
-            $('.js--wp-2').addClass('animated fadeInUp');
-        }, {
-            offset: '90%'
-        });
+    $('.js--wp-2').waypoint(function(direction) {
+        $('.js--wp-2').addClass('animated fadeInUp');
+    }, {
+        offset: '90%'
+    });
 
-        $('.js--wp-3').waypoint(function(direction) {
-            $('.js--wp-3').addClass('animated jackInTheBox');
-        }, {
-            offset: '80%'
-        });
-
-        $('.js--wp-4').waypoint(function(direction) {
-            $('.js--wp-4').addClass('animated bounceIn');
-        }, {
-            offset: '70%'
-        });
-        $('.js--wp-5').waypoint(function(direction) {
-            $('.js--wp-5').addClass('animated bounceIn');
-        }, {
-            offset: '80%'
-        });
+    $('.js--wp-3').waypoint(function(direction) {
+        $('.js--wp-3').addClass('animated jackInTheBox');
+    }, {
+        offset: '80%'
+    });
+    $('.js--wp-4').waypoint(function(direction) {
+        $('.js--wp-4').addClass('animated bounceIn');
+    }, {
+        offset: '70%'
+    });
+    $('.js--wp-5').waypoint(function(direction) {
+        $('.js--wp-5').addClass('animated bounceIn');
+    }, {
+        offset: '80%'
+    });
 
 //---------------------SCROLLING---------------------
     var scrollLink = $('.scroll');
@@ -41,19 +40,6 @@ $(document).ready(function() {
             scrollTop: $(this.hash).offset().top
         }, 1000 );
     });
-
-//---------------------INSTAFEED---------------------
-
-    var userFeed = new Instafeed({
-        get: 'user',
-        userId: '4882411762',
-        accessToken: '4882411762.28b9a92.21892786d6e342369e02089da8ec4394',
-        resolution: 'standard_resolution'
-    });
-    userFeed.run();
-
-
-});
 
 //---------------------MAP---------------------
 
